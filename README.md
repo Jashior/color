@@ -1,5 +1,7 @@
 # Color Analysis Tool
 
+[View Demo](https://jashior.github.io/color/)
+
 A web-based tool for analyzing and visualizing the color composition of images. This application provides detailed color insights through various visualizations including dominant color extraction, color distribution charts, and an interactive color wheel.
 
 ## Features
