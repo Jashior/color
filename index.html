@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Analysis</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Color Analysis</h1>
+        
+        <div class="upload-area" id="dropArea">
+            <p>Drop image or click to upload</p>
+            <input type="file" id="fileInput" accept="image/*" hidden>
+        </div>
+        
+        <div class="results" id="results">
+            <div class="image-preview">
+                <img id="previewImage" src="" alt="Preview">
+            </div>
+            <div class="color-info">
+                <div class="dominant-colors">
+                    <h2>Dominant Colors</h2>
+                    <div id="colorPalette" class="color-palette"></div>
+                </div>
+                <div class="color-stats">
+                    <h2>Color Distribution</h2>
+                    <canvas id="colorChart"></canvas>
+                </div>
+            </div>
+            <div class="color-wheel-container">
+                <h2>Color Wheel</h2>
+                <canvas id="colorWheel" width="400" height="400"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/colorAnalysis.js"></script>
+</body>
+</html>
